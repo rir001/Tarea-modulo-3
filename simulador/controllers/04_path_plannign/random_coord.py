@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 
 def get_points(n=2):
     """Genera n coordenadas aleatorias en el mapa"""
-    if n == 0: return np.array([[0, 0], [0, 0]])
     _mapa = plt.imread("maze.png")[::, ::, 0]
     paths = []
     while len(paths) < n:
