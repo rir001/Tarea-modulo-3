@@ -69,17 +69,13 @@ while not game_over:
                 image4 = pygame.transform.scale(random.choice(incorrect_images), (WIDTH/2, HEIGHT/2))
 
                 if option == 1:
-                    image1 = random.choice(correct_images)
-                    image1 = pygame.transform.scale(image1, (WIDTH/2, HEIGHT/2))
+                    image1 = pygame.transform.scale(random.choice(correct_images), (WIDTH/2, HEIGHT/2))
                 if option == 2:
-                    image2 = random.choice(correct_images)
-                    image2 = pygame.transform.scale(image2, (WIDTH/2, HEIGHT/2))
+                    image2 = pygame.transform.scale(random.choice(correct_images), (WIDTH/2, HEIGHT/2))
                 if option == 3:
-                    image3 = random.choice(correct_images)
-                    image3 = pygame.transform.scale(image3, (WIDTH/2, HEIGHT/2))
+                    image3 = pygame.transform.scale(random.choice(correct_images), (WIDTH/2, HEIGHT/2))
                 if option == 4:
-                    image4 = random.choice(correct_images)
-                    image4 = pygame.transform.scale(image4, (WIDTH/2, HEIGHT/2))
+                    image4 = pygame.transform.scale(random.choice(correct_images), (WIDTH/2, HEIGHT/2))
 
 
     screen.fill(WHITE)
