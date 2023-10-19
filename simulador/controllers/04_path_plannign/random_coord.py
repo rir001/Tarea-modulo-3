@@ -11,6 +11,6 @@ def get_points(n=2):
         if _mapa[y, x] == 1 and \
             [x, y] not in [[int(n[0]), int(n[1])] for n in paths] and \
             all([7<(int(x-n[0])**2 + int(y-n[1])**2) for n in paths]):
-            paths.append([x+np.random.rand(), y+np.random.rand()])
+            paths.append([x+np.random.rand()*0.7+0.15, y+np.random.rand()*0.7+0.15])
 
     return np.array(paths) - len(_mapa) / 2

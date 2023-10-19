@@ -18,6 +18,5 @@ class Robot(base_robot):
         self.gyro.enable(int(self.getBasicTimeStep()))
         self._desfase_gyro = [np.random.randint(-1, 1)]*2 + [0]
 
-
     def gyroGetValues(self):
         return np.array(self.gyro.getValues()) + self._desfase_gyro

@@ -1,0 +1,11 @@
+WIDTH = 800
+HEIGHT = 800
+
+SCALE = 80
+
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+
+ANGLE = 90
+
+MAX_RANGE = 2
