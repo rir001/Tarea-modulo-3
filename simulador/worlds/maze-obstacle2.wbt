@@ -98,7 +98,6 @@ Deer {
 }
 TurtleBot3Burger {
   rotation -0.002322825558174379 -0.001048829620428503 -0.9999967522136527 0
-  controller "mapper"
   extensionSlot [
     GPS {
       translation 0 0 -0.12

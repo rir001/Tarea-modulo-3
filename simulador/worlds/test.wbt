@@ -1,0 +1,72 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Plaster.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Rubber.proto"
+EXTERNPROTO "../protos/TurtleBot3Burger.proto"
+EXTERNPROTO "../protos/RobotisLds01.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/animals/protos/Cat.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/toys/protos/RubberDuck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+
+WorldInfo {
+  optimalThreadCount 2
+}
+Viewpoint {
+  orientation -0.23360777570653768 0.3806871377488142 0.8947092881389235 1.2023614095123114
+  position -2.933849465074723 -6.9274167789885 4.137463005711177
+}
+TexturedBackground {
+  texture "noon_park_empty"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 5 5
+  floorAppearance Plaster {
+  }
+  wallHeight 0.2
+  wallAppearance Rubber {
+  }
+}
+TurtleBot3Burger {
+  rotation -0.002322825558174379 -0.001048829620428503 -0.9999967522136527 0
+  extensionSlot [
+    GPS {
+      translation 0 0 -0.12
+    }
+    Camera {
+      translation 0.04 0 -0.03
+      width 412
+      height 300
+      recognition Recognition {
+        frameColor 0.5 0.8 1
+        frameThickness 3
+        segmentation TRUE
+      }
+    }
+    RobotisLds01 {
+    }
+  ]
+}
+Cat {
+  translation 1.44891 0.388207 0
+  rotation 0 0 1 -2.8797953071795863
+  scale 0.8
+}
+RubberDuck {
+  translation 1.1523 -0.289772 0.02
+  rotation 0 0 1 2.87979
+}
+Wall {
+  translation -1.28 0 0
+  size 0.2 2 0.4
+}
+Wall {
+  translation -0.38 0.91 0
+  rotation 0 0 1 1.5708
+  name "wall(1)"
+  size 0.2 2 0.4
+}
