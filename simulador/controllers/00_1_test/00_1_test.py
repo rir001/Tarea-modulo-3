@@ -60,7 +60,7 @@ while robot.step(timestep) != -1:
             y = int(np.sin(angle) * data[i])
 
 
-            mapa[center[0] + y, center[1] + x] = 1
+            mapa[center[1] + y, center[0] + x] = 1
 
     mpimg.imsave("mapa.png", mapa)
 
