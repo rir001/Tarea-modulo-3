@@ -12,4 +12,4 @@ def get_points(n=2):
             all([7<(int(x-n[0])**2 + int(y-n[1])**2) for n in paths]):
             paths.append([x+np.random.rand()*0.6+0.2, y+np.random.rand()*0.6+0.2])
 
-    return np.array(paths) - len(_mapa) / 2
+    return (np.array(paths) - len(_mapa) / 2) / 5
